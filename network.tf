@@ -58,8 +58,7 @@ resource "aws_security_group" "wilsonle-hobby-security-group" {
     from_port   = var.database-secrets.DATABASE_PORT
     to_port     = var.database-secrets.DATABASE_PORT
     protocol    = "tcp"
-    cidr_blocks = [var.my-ip]
-    self        = true
+    cidr_blocks = var.db-allowed-ips
   }
 
   egress {

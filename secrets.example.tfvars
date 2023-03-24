@@ -7,4 +7,4 @@ database-secrets = {
   DATABASE_PASSWORD = ""
 }
 
-my-ip = ""
+db-allowed-ips = ["", ""]
